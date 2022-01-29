@@ -1,0 +1,396 @@
+/* ================== Google fonts - Montserrat, Nunito sans ================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap');
+
+/* ================== Variables ================== */
+// Text color
+$text_color_light: #ffffff;
+$text_color_dark: #1d1d1d;
+$text_color_gray: #787878;
+
+// Background color
+$theme_color: #44cdc8;
+$bg_gray: #e9e9e9;
+$bg_light: #ffffff;
+$bg_secondary: #f8f9f9;
+
+// Fonts
+$montserrat: 'Montserrat', sans-serif;
+$nunito: 'Nunito Sans', sans-serif;
+
+/* ================== Reset Code ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================== General Code ================== */
+p {
+  font-family: $nunito;
+  color: $text_color_gray;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $montserrat;
+  color: $text_color_dark;
+}
+
+.container {
+  width: 65%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ================== Header area code start ================== */
+#header-area {
+  padding-top: 38px;
+  background-color: $bg_gray;
+
+  // Navbar
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Navbar brand
+    .navbar-brand {
+      .logo {
+        max-width: 100px;
+        min-width: 35px;
+        height: auto;
+      }
+    }
+
+    // Navbar menu
+    .navbar-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 29px;
+      list-style: none;
+
+      .nav-item {
+        .nav-link {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: $montserrat;
+          font-weight: 500;
+          color: $text_color_dark;
+          transition: all 0.3s ease;
+          font-size: 12px;
+
+          &:hover {
+            color: $theme_color;
+          }
+        }
+      }
+    }
+
+    .hamberger {
+      display: none;
+    }
+  }
+
+  // Hero area
+  .hero-area {
+    padding-top: 180px;
+    padding-bottom: 200px;
+
+    .hero-contents {
+      width: 40%;
+      margin-left: auto;
+
+      .main-title {
+        color: $text_color_dark;
+        margin-bottom: 40px;
+      }
+
+      .desc {
+        margin-bottom: 40px;
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $theme_color;
+        padding: 23px 46px;
+        color: $text_color_light;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #header-area {
+    padding-top: 38px;
+    background-color: $bg_gray;
+  
+    // Navbar
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      // Navbar brand
+      .navbar-brand {
+        .logo {
+          max-width: 100px;
+          min-width: 35px;
+          height: auto;
+        }
+      }
+  
+      // Navbar menu
+      .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+  
+        .nav-item {
+          .nav-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-weight: 500;
+            color: $text_color_dark;
+            transition: all 0.3s ease;
+            font-size: 12px;
+  
+            &:hover {
+              color: $theme_color;
+            }
+          }
+        }
+      }
+    }
+  
+    // Hero area
+    .hero-area {
+      padding-top: 180px;
+      padding-bottom: 200px;
+  
+      .hero-contents {
+        width: 100%;
+        margin-left: auto;
+  
+        .main-title {
+          color: $text_color_dark;
+          margin-bottom: 40px;
+        }
+  
+        .desc {
+          margin-bottom: 40px;
+        }
+  
+        .btn {
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-color: $theme_color;
+          padding: 23px 46px;
+          color: $text_color_light;
+        }
+  
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #header-area {
+    padding-top: 38px;
+    background-color: $bg_gray;
+  
+    // Navbar
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  
+      // Navbar brand
+      .navbar-brand {
+        margin-bottom: 20px;
+        .logo {
+          max-width: 100px;
+          min-width: 35px;
+          height: auto;
+        }
+      }
+  
+      // Navbar menu
+      .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+  
+        .nav-item {
+          .nav-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-weight: 500;
+            color: $text_color_dark;
+            transition: all 0.3s ease;
+            font-size: 12px;
+  
+            &:hover {
+              color: $theme_color;
+            }
+          }
+        }
+      }
+    }
+  
+    // Hero area
+    .hero-area {
+      padding-top: 130px;
+      padding-bottom: 150px;
+  
+      .hero-contents {
+        width: 100%;
+        margin-left: auto;
+  
+        .main-title {
+          color: $text_color_dark;
+          margin-bottom: 40px;
+        }
+  
+        .desc {
+          margin-bottom: 40px;
+        }
+  
+        .btn {
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-color: $theme_color;
+          padding: 23px 46px;
+          color: $text_color_light;
+        }
+  
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #header-area {
+    padding-top: 38px;
+    background-color: $bg_gray;
+  
+    // Navbar
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  
+      // Navbar brand
+      .navbar-brand {
+        margin-bottom: 0;
+        .logo {
+          max-width: 100px;
+          min-width: 35px;
+          height: auto;
+        }
+      }
+  
+      // Navbar menu
+      .navbar-menu {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+  
+        .nav-item {
+          .nav-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-weight: 500;
+            color: $text_color_dark;
+            transition: all 0.3s ease;
+            font-size: 12px;
+  
+            &:hover {
+              color: $theme_color;
+            }
+          }
+        }
+      }
+
+      .hamberger {
+        display: inline-block;
+        position: relative;
+        width: 15px;
+        height: 2px;
+        background-color: $text_color_dark;
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          height: inherit;
+          width: inherit;
+          content: '';
+          background-color: inherit;
+          bottom: 5px;
+        }
+
+        &::before {
+          position: absolute;
+          height: inherit;
+          width: inherit;
+          content: '';
+          background-color: inherit;
+          top: 5px;
+        }
+      }
+    }
+  
+    // Hero area
+    .hero-area {
+      padding-top: 130px;
+      padding-bottom: 150px;
+  
+      .hero-contents {
+        width: 100%;
+        margin-left: auto;
+  
+        .main-title {
+          color: $text_color_dark;
+          margin-bottom: 40px;
+        }
+  
+        .desc {
+          margin-bottom: 40px;
+        }
+  
+        .btn {
+          display: inline-block;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-color: $theme_color;
+          padding: 23px 46px;
+          color: $text_color_light;
+        }
+  
+      }
+    }
+  }
+}
+
+/* ================== Header area code end ================== */
